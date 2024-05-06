@@ -1,0 +1,26 @@
+{
+  "name": "luauth-api-wrapper",
+  "version": "1.0.0",
+  "description": "Luauth api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKonaNN/Luauth-API-Wrapper.git"
+  },
+  "keywords": [
+    "luauth",
+    "fivem",
+    "lua",
+    "auth",
+    "lua"
+  ],
+  "author": "konan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KKonaNN/Luauth-API-Wrapper/issues"
+  },
+  "homepage": "https://github.com/KKonaNN/Luauth-API-Wrapper#readme"
+}
