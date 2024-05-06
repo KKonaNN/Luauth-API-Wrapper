@@ -29,7 +29,7 @@ npm install luauth
 ```
 ### Import the package
 ```js
-const Luauth = require('luauth-api-wrapper');
+const Luauth = require('luauth-core');
 ```
 
 ### Connect with API Key
