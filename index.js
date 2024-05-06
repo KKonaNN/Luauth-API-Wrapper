@@ -93,13 +93,11 @@ class Luauth {
         });
     }
 
-    async createScript(script_name, platform, script, logs_webhook, alerts_webhook, ffa, silent) {
-        if (platform !== "roblox" && platform !== "fivem" && platform !== "csgo") throw new Error("Invalid platform")
+    async createScript(script_name, script, logs_webhook, alerts_webhook, ffa, silent) {
         if (!script_name || !platform || !script || !logs_webhook || !alerts_webhook) throw new Error('[Luauth Wrapper] Missing required parameters');  
         return await axios.post(`${this.#base_url}/create`, {
             script_name: script_name,
-            platform: platform,
-            script: script,
+            script: btoa(script),
             logs_webhook: logs_webhook,
             alerts_webhook: alerts_webhook,
             ffa: ffa,
@@ -115,7 +113,7 @@ class Luauth {
     async updateScript(script_id, script, logs_webhook, alerts_webhook, ffa, silent) {
         if (!script_id || !script || !logs_webhook || !alerts_webhook) throw new Error('[Luauth Wrapper] Missing required parameters');  
         return await axios.put(`${this.#base_url}/scripts/${script_id}`, {
-            file: script,
+            file: btoa(script),
             logs_webhook: logs_webhook,
             alerts_webhook: alerts_webhook,
             ffa: ffa,
