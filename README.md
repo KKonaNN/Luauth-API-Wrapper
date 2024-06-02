@@ -25,7 +25,7 @@ This project is an API Wrapper for [Luauth](https://luauth.io).
 ## Setup 
 
 ```sh
-npm install luauth
+npm i luauth-core
 ```
 ### Import the package
 ```js
